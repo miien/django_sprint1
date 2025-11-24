@@ -65,3 +65,7 @@ def post_detail(request, id):
 def category_posts(request, category_slug):
     context = {'category_slug': category_slug}
     return render(request, 'blog/category.html', context)
+
+
+def debug_category(request, category_slug):
+    return HttpResponse(f"DEBUG: Category slug is {category_slug}")
