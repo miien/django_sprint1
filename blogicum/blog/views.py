@@ -65,7 +65,7 @@ def post_detail(request, id):
 
 def category_posts(request, category_slug):
     # Временно упрощаем для диагностики
-    return HttpResponse(f"Category: {category_slug}")  # ← Теперь HttpResponse определен
+    return HttpResponse(f"Category: {category_slug}")
 
 
 def debug_category(request, category_slug):
