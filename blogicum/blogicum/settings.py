@@ -59,14 +59,3 @@ STATICFILES_DIRS = [
     BASE_DIR / 'html' / 'css',
     BASE_DIR / 'html' / 'img',
 ]
-
-
-
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],  # ← переименовали html в templates
-        'APP_DIRS': True,
-        # ...
-    },
-]
