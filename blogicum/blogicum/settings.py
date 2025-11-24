@@ -56,6 +56,6 @@ DATABASES = {
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / 'html' / 'css',
-    BASE_DIR / 'html' / 'img',
+    BASE_DIR / 'templates' / 'css',
+    BASE_DIR / 'templates' / 'img',
 ]
