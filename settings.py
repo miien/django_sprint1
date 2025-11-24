@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -35,7 +34,7 @@ ROOT_URLCONF = 'urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'html'],  # указываем на папку с HTML-файлами
+        'DIRS': [BASE_DIR / 'html'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
