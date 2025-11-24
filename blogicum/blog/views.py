@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse  # ← ДОБАВЬТЕ ЭТОТ ИМПОРТ
 
 
 posts = [
@@ -63,8 +64,8 @@ def post_detail(request, id):
 
 
 def category_posts(request, category_slug):
-    context = {'category_slug': category_slug}
-    return render(request, 'blog/category.html', context)
+    # Временно упрощаем для диагностики
+    return HttpResponse(f"Category: {category_slug}")  # ← Теперь HttpResponse определен
 
 
 def debug_category(request, category_slug):
